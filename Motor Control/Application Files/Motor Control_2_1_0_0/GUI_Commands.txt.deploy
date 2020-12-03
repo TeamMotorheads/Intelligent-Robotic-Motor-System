@@ -1,0 +1,18 @@
+﻿Command					Explaination
+
+exit/close				Will exit the application and any subapps as well.
+restart/restart gui		Will immediately restart the application.
+help/?					Will open the help application.
+{ list of commands,
+  loc,
+  commands,
+  cmds,
+}						Any of these choices will open the list of commands application.
+clear all				Will clear all input and output boxes.
+clear inputs			Will clear the input boxes.
+clear status			Will clear the status messages box.
+clear arduino			Will clear the arduino messages box.
+clear errors			Will clear any error messages in the status bar.
+clear screens			Will clear the status and arduino messages box.
+open port				Will open the com port at whatever settings are selected in the drop down menus.
+close port				Will close the com port.

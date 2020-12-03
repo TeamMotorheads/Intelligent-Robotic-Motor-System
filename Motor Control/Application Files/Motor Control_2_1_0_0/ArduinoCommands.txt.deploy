@@ -1,0 +1,6 @@
+﻿Command				Explaination
+
+reset arduino		Will reset the arduino programmically.
+led off				Will turn the testing led off.
+led half			Will turn on the testing led to 50%.
+led on				Will turn on the testing led to 100%.
