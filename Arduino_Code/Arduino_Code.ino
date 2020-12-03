@@ -45,8 +45,8 @@ CMD cmd;
 // Comment out the md object depending on the motor shield
 DualVNH5019MotorShield md; // single/dual motor shield
 
-// reset function for arduino mega and uno
-void(* resetFunc) (void) = 0;
+
+void(* resetFunc) (void) = 0; // reset function for arduino mega and uno
 // the arduino zero uses this function to reset: NVIC_SystemReset()
 
 void setup() {
@@ -508,7 +508,8 @@ void resetArduino(int mod) {
     digitalWrite(ledPin, HIGH);
     delay(2000);
     digitalWrite(ledPin, LOW);
-    NVIC_SystemReset();
+    NVIC_SystemReset(); // Uncomment this line to use a Zero
+    // resetFunc(); // Uncomment this line to use an Uno or Mega
   }
 }
 
